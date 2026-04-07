@@ -1,42 +1,41 @@
 :root {
     --bg: #0a0a0f;
     --panel: #111118;
-    --accent: #39ff14; /* Verde Neon */
-    --danger: #ff4060; /* Vermelho Maçã */
+    --accent: #9d4edd; /* Verde Neon */
+    --danger: #ec1919; /* Vermelho Maçã */
 }
 
 /* O container principal da grade */
 #grid {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background-color: #050505; /* Fundo bem escuro */
     border: 1px solid #1e1e2e;
 }
 
 /* Cada um dos 400 quadradinhos */
 #grid div {
-    width: 20px;
-    height: 20px;
-    /* Aqui está o segredo: uma borda muito sutil */
+    width: 25px;
+    height: 25px;
     border: 0.1px solid rgba(255, 255, 255, 0.05); 
-    box-sizing: border-box; /* Garante que a borda não aumente o tamanho do quadrado */
+    box-sizing: border-box; 
 }
 
 /* Estilo da Cobra com brilho neon */
 .snake {
-    background-color: #39ff14 !important;
-    box-shadow: 0 0 10px #39ff14;
+    background-color: #a050e0 !important;
+    box-shadow: 0 0 6px #9940e2;
     border: 1px solid #000 !important; /* Destaca os gomos da cobra */
     z-index: 2;
 }
 
 /* Estilo da Maçã */
 .apple {
-    background-color: #ff4060 !important;
+    background-color: #ec1919 !important;
     border-radius: 50%;
-    box-shadow: 0 0 15px #ff4060;
+    box-shadow: 0 0 15px #815159;
     z-index: 2;
 }
 
@@ -78,7 +77,7 @@ body {
 header h1 {
     color: var(--accent);
     letter-spacing: 5px;
-    text-shadow: 0 0 10px var(--accent);
+    text-shadow: 0 0 5px var(--accent);
 }
 
 .hud {
@@ -93,25 +92,6 @@ header h1 {
     border: 2px solid #1e1e2e;
 }
 
-canvas {
-    display: block;
-    background-color: #000;
-    /* O grid de quadradinhos que você gostou */
-    background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.85);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .hidden {
     display: none !important;
 }
@@ -119,7 +99,7 @@ canvas {
 /* Opcional: Deixar o texto de pausa em uma cor diferente (ex: Amarelo) */
 #screen-pause h2 {
     color: #ffeb3b;
-    text-shadow: 0 0 10px #ffeb3b;
+    text-shadow: 0 0 5px #ffeb3b;
 }
 
 .btn {
@@ -136,7 +116,7 @@ canvas {
 .btn:hover {
     background: var(--accent);
     color: #000;
-    box-shadow: 0 0 15px var(--accent);
+    box-shadow: 0 0 7px var(--accent);
 }
 
 .hint { color: #666; font-size: 0.8rem; margin-top: 10px; }
