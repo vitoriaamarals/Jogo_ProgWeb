@@ -63,6 +63,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .game-container {
@@ -96,7 +97,6 @@ header h1 {
     display: none !important;
 }
 
-/* Opcional: Deixar o texto de pausa em uma cor diferente (ex: Amarelo) */
 #screen-pause h2 {
     color: #ffeb3b;
     text-shadow: 0 0 5px #ffeb3b;
