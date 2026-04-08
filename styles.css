@@ -1,7 +1,7 @@
 :root {
     --bg: #0a0a0f;
     --panel: #111118;
-    --accent: #9d4edd; /* Verde Neon */
+    --accent: #9d4edd; /* Roxo */
     --danger: #ec1919; /* Vermelho Maçã */
 }
 
@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
-    background-color: #050505; /* Fundo bem escuro */
+    background-color: #050505; 
     border: 1px solid #1e1e2e;
 }
 
@@ -23,7 +23,6 @@
     box-sizing: border-box; 
 }
 
-/* Estilo da Cobra com brilho neon */
 .snake {
     background-color: #a050e0 !important;
     box-shadow: 0 0 6px #9940e2;

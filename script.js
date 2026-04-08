@@ -24,7 +24,7 @@ function createBoard() {
 }
 createBoard();
 
-// 3. Controle por teclado (Eventos) [cite: 15]
+// 3. Controle por teclado
 function control(e) {
     if (e.key === "ArrowUp" && direction !== 20) direction = -20;
     else if (e.key === "ArrowDown" && direction !== -20) direction = 20;
