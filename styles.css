@@ -5,7 +5,7 @@
     --danger: #ec1919; /* Vermelho Maçã */
 }
 
-/* O container principal da grade */
+/* container principal */
 #grid {
     display: flex;
     flex-wrap: wrap;
@@ -26,11 +26,11 @@
 .snake {
     background-color: #a050e0 !important;
     box-shadow: 0 0 6px #9940e2;
-    border: 1px solid #000 !important; /* Destaca os gomos da cobra */
+    border: 1px solid #000 !important; 
     z-index: 2;
 }
 
-/* Estilo da Maçã */
+/* maçã */
 .apple {
     background-color: #ec1919 !important;
     border-radius: 50%;
@@ -38,7 +38,7 @@
     z-index: 2;
 }
 
-/* Garante que o overlay fique por cima da grade */
+/* garantir que o overlay fique por cima da grade */
 .overlay {
     position: absolute;
     top: 0;

@@ -17,7 +17,7 @@ O objetivo do jogo é acumular o máximo de pontos possível.<br/>
 
 - **Tecnologias:** Desenvolvido exclusivamente com HTML, CSS e JavaScript.
 - **Lógica de Jogo:** Implementação de sistemas de pontuação, progressão de níveis, estados de pausa e reinício.
-- **Manipulação do DOM:** Criação dinâmica da grade de jogo (20x20) e controle de elementos de interface via JavaScript.
+- **DOM:** Manipulação dinâmica para renderização e atualização em tempo real.
 
 ## 📂 Organização do Projeto
 
@@ -26,6 +26,14 @@ O repositório está organizado da seguinte forma:
 - `index.html`: Estrutura principal da página e elementos de interface.
 - `styles.css`: Estilização visual, animações neon e layout responsivo.
 - `script.js`: Toda a lógica do motor do jogo, eventos e estados.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+##
+
+<p>Trabalho desenvolvido por Vitória Christie Amaral Santos (Matrícula: 202310422). </p>
 
 
 

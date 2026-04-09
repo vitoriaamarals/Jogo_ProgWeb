@@ -1,4 +1,4 @@
-// 1. Variáveis de Estado e Seleção de Elementos 
+// variaveis vindas do html 
 const grid = document.querySelector('#grid');
 const scoreEl = document.getElementById('score');
 const levelEl = document.getElementById('level');
@@ -7,14 +7,14 @@ const overScreen = document.getElementById('screen-over');
 
 let squares = [];
 let snake = [2, 1, 0]; // Índices das divs que formam a cobra
-let direction = 1;      // 1 para direita, -1 esquerda, 20 baixo, -20 cima
+let direction = 1;     // 1 para direita, -1 esquerda, 20 baixo, -20 cima
 let appleIndex = 0;
 let score = 0;
 let level = 1;
 let timerId = 0;
 let intervalTime = 200;
 
-// 2. Criar a grade de 400 divs (20x20) 
+//  grade de 400 divs (20x20) 
 function createBoard() {
     for (let i = 0; i < 400; i++) {
         let square = document.createElement('div');
@@ -24,7 +24,7 @@ function createBoard() {
 }
 createBoard();
 
-// 3. Controle por teclado
+// controle por teclado
 function control(e) {
     if (e.key === "ArrowUp" && direction !== 20) direction = -20;
     else if (e.key === "ArrowDown" && direction !== -20) direction = 20;
@@ -33,7 +33,7 @@ function control(e) {
 }
 document.addEventListener("keydown", control);
 
-// 4. Lógica de Movimentação e Colisão 
+// lógica: movimento e colisão
 function move() {
     // Checar colisão com bordas e corpo
     if (
@@ -64,7 +64,7 @@ function move() {
     squares[snake[0]].classList.add('snake');
 }
 
-// 5. Funções Auxiliares 
+// funcoes auxilires para gerar maçã e atualizar pontuação/nível
 function generateApple() {
     do {
         appleIndex = Math.floor(Math.random() * squares.length);
@@ -84,13 +84,12 @@ function updateScore() {
     }
 }
 
-// Seleção do elemento de pausa
 const pauseScreen = document.getElementById('screen-pause');
 let isPaused = false;
 
 function togglePause() {
-    // Só permite pausar se o jogo já tiver começado (startScreen escondida)
-    // e se não for Game Over (overScreen escondida)
+    // Só permite pausar se o jogo já tiver começado 
+    // e se não for Game Over 
     if (startScreen.classList.contains('hidden') && overScreen.classList.contains('hidden')) {
         if (isPaused) {
             timerId = setInterval(move, intervalTime);
@@ -115,7 +114,7 @@ function gameOver() {
     overScreen.classList.remove('hidden');
 }
 
-// 6. Inicialização e Botões 
+// inicialização e botoes 
 document.getElementById('btn-start').addEventListener('click', () => {
     startScreen.classList.add('hidden');
     generateApple(); 
